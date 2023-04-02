@@ -2,6 +2,7 @@
 export default {
   data() {
     return {
+      // namespace: [],
       multipleSelection: [],
       deletePodInfo: {
         name: "",
@@ -225,7 +226,6 @@ export default {
             <div v-for="(item, index) in this.namespace" :key="index">
               <el-dropdown-item :command="item">{{ item }}</el-dropdown-item>
             </div>
-            <el-dropdown-item :command="item">item</el-dropdown-item>
           </el-dropdown-menu>
         </el-dropdown>
       </el-col>
