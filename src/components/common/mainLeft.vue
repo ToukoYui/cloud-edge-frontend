@@ -42,7 +42,7 @@ export default {
 </script>
 <template>
     <div id="left">
-        <el-menu active-text-color="#dd5862" text-color="#000" :default-active="this.$route.path"
+        <el-menu active-text-color="#dd5862" text-color="white" :default-active="this.$route.path"
             class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" :collapse="flag"
             background-color="#124280" menu-trigger="click" router>
             <el-submenu v-for="(item, index) in menu" :index='item.index' :key="index">
